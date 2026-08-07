@@ -143,6 +143,7 @@ sns.heatmap(
 plt.title("Correlation Between Health Indicators")
 plt.show()
 ```
+<img width="2726" height="2344" alt="Heatmap" src="https://github.com/user-attachments/assets/cecb1400-450a-490f-89c1-06bb1ceaf36a" />
 
 ---
 
@@ -180,14 +181,24 @@ plt.show()
 ### 1. Health Spending vs. Life Expectancy ROI
 
 Regression analysis indicates a positive relationship up to approximately **8–10% of GDP**. Beyond this threshold, additional health expenditure provides diminishing improvements in life expectancy unless accompanied by strong sanitation, education, and healthcare infrastructure.
+<img width="730" height="827" alt="Screenshot 2026-08-07 171719" src="https://github.com/user-attachments/assets/8acbe70d-58b2-4a72-9b71-2f5cf76a39ba" />
+<img width="747" height="821" alt="Screenshot 2026-08-07 171654" src="https://github.com/user-attachments/assets/83435a7c-ed5d-4f32-bec4-338e23240605" />
+<img width="731" height="812" alt="Screenshot 2026-08-07 171637" src="https://github.com/user-attachments/assets/9d52280d-2c6c-4618-8ed5-a8219c61bea6" />
+Unexpectedly, Our regression analysis reveals that government health expenditure (% of GDP) exhibits diminishing returns and, in some regions, a negative correlation with life expectancy. This proves that policy interventions should focus on healthcare system efficiency and preventative care rather than simply inflating public health budgets as a percentage of GDP."
 
 ### 2. Poverty Reduction Success
 
 Asian economies such as **China**, **Vietnam**, and **Thailand** achieved more than **90% poverty reduction** during the evaluated period, driven by industrialization, sustained economic growth, and digital expansion.
+<img width="273" height="617" alt="image" src="https://github.com/user-attachments/assets/d38b61c2-9f68-479a-bf97-3b10b2d7e847" />
 
 ### 3. Digital Divide & Immunization
 
 Countries experiencing rapid internet adoption (>60% penetration) generally exhibited improvements in childhood immunization coverage, suggesting that digital connectivity supports healthcare awareness and outreach.
+<img width="943" height="335" alt="image" src="https://github.com/user-attachments/assets/8ceab095-8bff-4813-a54f-c9f493798bbb" />
+
+### 4. Socio Economic Trends Over time
+Time-series analysis from 1990 to 2024 reveals a stark contrast between technological adoption and environmental policy: while mobile subscriptions surged from <1% to >115% saturation and internet usage reached ~70% globally, environmental metrics (forest area and renewable energy share) remained stagnant at ~30%. Additionally, the GDP growth trend clearly isolates the severe economic contraction of the 2020 global pandemic
+<img width="1108" height="501" alt="image" src="https://github.com/user-attachments/assets/d47aa8cf-77d2-47d0-8373-9d188df80dfb" />
 
 ---
 
