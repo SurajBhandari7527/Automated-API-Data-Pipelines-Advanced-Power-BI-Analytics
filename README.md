@@ -195,15 +195,15 @@ plt.show()
 ### 1. Health Spending vs. Life Expectancy ROI
 
 Regression analysis indicates a positive relationship up to approximately **8–10% of GDP**. Beyond this threshold, additional health expenditure provides diminishing improvements in life expectancy unless accompanied by strong sanitation, education, and healthcare infrastructure.
-<img width="730" height="827" alt="Screenshot 2026-08-07 171719" src="https://github.com/user-attachments/assets/8acbe70d-58b2-4a72-9b71-2f5cf76a39ba" />
-<img width="747" height="821" alt="Screenshot 2026-08-07 171654" src="https://github.com/user-attachments/assets/83435a7c-ed5d-4f32-bec4-338e23240605" />
-<img width="731" height="812" alt="Screenshot 2026-08-07 171637" src="https://github.com/user-attachments/assets/9d52280d-2c6c-4618-8ed5-a8219c61bea6" />
+<img width="2123" height="808" alt="Screenshot 2026-08-07 171637" src="https://github.com/user-attachments/assets/19af5087-6084-4a7a-b26b-c769b67009ac" />
+
 Unexpectedly, Our regression analysis reveals that government health expenditure (% of GDP) exhibits diminishing returns and, in some regions, a negative correlation with life expectancy. This proves that policy interventions should focus on healthcare system efficiency and preventative care rather than simply inflating public health budgets as a percentage of GDP."
 
 ### 2. Poverty Reduction Success
 
 Asian economies such as **China**, **Vietnam**, and **Thailand** achieved more than **90% poverty reduction** during the evaluated period, driven by industrialization, sustained economic growth, and digital expansion.
-<img width="273" height="617" alt="image" src="https://github.com/user-attachments/assets/d38b61c2-9f68-479a-bf97-3b10b2d7e847" />
+<img width="434" height="617" alt="Screenshot 2026-08-07 172056" src="https://github.com/user-attachments/assets/03cc33e1-e7b9-4eab-9c34-ac9862c90831" />
+
 
 ### 3. Digital Divide & Immunization
 
