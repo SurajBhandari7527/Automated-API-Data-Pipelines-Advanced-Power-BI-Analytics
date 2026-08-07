@@ -1,0 +1,1 @@
+Out of 29,000+ indicators, Only 26 major indicators were chosen.
