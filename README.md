@@ -10,6 +10,7 @@ I built an automated pipeline using a Python script to ingest macroeconomic data
 
 An end-to-end macroeconomic and public health intelligence solution that ingests data from the **World Bank REST API**, processes time-series metrics via an automated ETL pipeline, and delivers interactive exploratory analytics using **Power BI**, **DAX**, and **embedded Python data visualizations**.
 
+<img width="400" height="250" alt="analysis_with_slicer_filtering" src="https://github.com/user-attachments/assets/5cad6590-332f-46a4-bacd-ded005ac09c6" />
 ---
 
 # 📌 Executive Summary & Dashboard Preview
