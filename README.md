@@ -145,6 +145,19 @@ plt.show()
 ```
 <img width="2726" height="2344" alt="Heatmap" src="https://github.com/user-attachments/assets/cecb1400-450a-490f-89c1-06bb1ceaf36a" />
 
+### Key Insights from Heatmap: 
+
+### 1. Skilled Attendance directly drives down mortality rates
+Key Finding: Higher coverage of skilled birth attendance yields significant reductions in maternal and infant mortality.
+Strategic Action: Prioritize health workforce allocation and clinical training in high-risk regions to improve delivery safety and survival outcomes.
+
+### 2. Delivery complications affect both maternal and neonatal survival
+Key Finding: High positive correlation between maternal and infant mortality highlights systemic delivery room complications and emergency care gaps.
+Strategic Action: Strengthen integrated maternal-neonatal emergency response systems rather than treating maternal and pediatric care in isolation.
+
+### 3. Universal immunization is a critical baseline for population health
+Key Finding: Immunization coverage strongly correlates with increased life expectancy and reduced infant mortality.
+Strategic Action: Maintain uninterrupted vaccine supply chains and public health immunization initiatives to ensure long-term population health resilience.
 ---
 
 ### B. Linear Regression Model (Health Spend vs. Life Expectancy)
