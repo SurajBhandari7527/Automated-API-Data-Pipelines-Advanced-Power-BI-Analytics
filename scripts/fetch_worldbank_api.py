@@ -1,36 +1,4 @@
-import pandas as pd
-import requests
-
-# 1. FETCH COUNTRY METADATA (Region, Latitude, Longitude)
-
-country_api_url = "https://api.worldbank.org/v2/country?format=json&per_page=350"
-country_resp = requests.get(country_api_url)
-
-if country_resp.status_code == 200:
-    countries_raw = country_resp.json()[1]
-    
-    country_meta_list = []
-    for c in countries_raw:
-        country_meta_list.append({
-            "country": c.get("name"),
-            "region": c.get("region", {}).get("value"),
-            "latitude": c.get("latitude"),
-            "longitude": c.get("longitude")
-        })
-    
-    country_meta_df = pd.DataFrame(country_meta_list)
-else:
-    country_meta_df = pd.DataFrame(columns=["country", "region", "latitude", "longitude"])
-
-# Table: country_region_details (That consists of only country and region)
-country_region_details = (
-    country_meta_df[["country", "region"]]
-    .drop_duplicates()
-    .reset_index(drop=True)
-)
-country_region_details.to_csv("country_region_details.csv", index=False)
-
-# 2. DEFINE INDICATOR GROUPS
+# 1. DEFINE INDICATOR GROUPS
 indicator_groups = {
     "economic_activity_growth": [
         "NY.GDP.MKTP.KD.ZG",  # GDP growth (annual %)
@@ -75,7 +43,7 @@ indicator_groups = {
 }
 
 
-# 3. FETCH INDICATORS AND BUILD CATEGORY TABLES
+# 2. FETCH INDICATORS AND BUILD CATEGORY TABLES
 # Set per_page=1000 to fetch data faster
 BASE_URL = "https://api.worldbank.org/v2/country/all/indicator/{}?format=json&per_page=1000&page={}"
 target_columns = ["indicator_name", "country", "date", "value", "category", "latitude", "longitude", "region"]
