@@ -1,4 +1,39 @@
-# 1. DEFINE INDICATOR GROUPS
+import pandas as pd
+import requests
+
+# 1. Fetch country metadata from the World Bank API
+country_api_url = "https://api.worldbank.org/v2/country?format=json&per_page=350"
+country_resp = requests.get(country_api_url)
+
+if country_resp.status_code == 200:
+    # World Bank API returns pagination info at index 0 and data list at index 1
+    countries_raw = country_resp.json()[1]
+
+    country_meta_list = []
+    for c in countries_raw:
+        country_meta_list.append({
+            "country": c.get("name"),
+            "region": c.get("region", {}).get("value"),
+            "latitude": c.get("latitude"),
+            "longitude": c.get("longitude")
+        })
+
+    country_meta_df = pd.DataFrame(country_meta_list)
+else:
+    print(f"Failed to fetch data. HTTP Status Code: {country_resp.status_code}")
+    country_meta_df = pd.DataFrame(columns=["country", "region", "latitude", "longitude"])
+
+# Create the country_region_details table (contains only country and region)
+country_region_details = (
+    country_meta_df[["country", "region"]]
+    .drop_duplicates()
+    .reset_index(drop=True)
+)
+
+# Export to CSV
+country_region_details.to_csv("country_region_details.csv", index=False)
+
+# 2. DEFINE INDICATOR GROUPS
 indicator_groups = {
     "economic_activity_growth": [
         "NY.GDP.MKTP.KD.ZG",  # GDP growth (annual %)
@@ -43,7 +78,7 @@ indicator_groups = {
 }
 
 
-# 2. FETCH INDICATORS AND BUILD CATEGORY TABLES
+# 3. FETCH INDICATORS AND BUILD CATEGORY TABLES
 # Set per_page=1000 to fetch data faster
 BASE_URL = "https://api.worldbank.org/v2/country/all/indicator/{}?format=json&per_page=1000&page={}"
 target_columns = ["indicator_name", "country", "date", "value", "category", "latitude", "longitude", "region"]
