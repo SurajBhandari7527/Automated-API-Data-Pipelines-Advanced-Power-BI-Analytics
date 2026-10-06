@@ -160,6 +160,8 @@ Strategic Action: Strengthen integrated maternal-neonatal emergency response sys
 ### 3. Universal immunization is a critical baseline for population health
 Key Finding: Immunization coverage strongly correlates with increased life expectancy and reduced infant mortality.
 Strategic Action: Maintain uninterrupted vaccine supply chains and public health immunization initiatives to ensure long-term population health resilience.
+
+
 ---
 
 ### B. Linear Regression Model (Health Spend vs. Life Expectancy)
